@@ -34,7 +34,18 @@ for (let counter = 0; counter < product.length; counter++) {
 
 alert(inventoryContent);
 
-function displayResult() {
-    return inventoryContent;
-}
+// function displayResult() {
+//     return inventoryContent;
+// }
 
+
+// Get the element by ID
+var outputElement = document.querySelector("#output");
+
+// Set the innerHTML of the element with the data
+if(outputElement){
+    outputElement.innerHTML = inventoryContent; 
+}
+else{
+    outputElement.innerHTML = "No data";
+}
